@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/head %>
+
+    <body>
+        <% include partials/header %>
+            <div id="PageContainer" class="is-moved-by-drawer">
+
+                <section id="breadcrumb">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="breadcrumb-content">
+                                <p class="breadcrumb-title"><%= i18n.__("nav_recruitment")%></p>
+                                <a href="/" title="Quay trở về trang chủ"><%= i18n.__("nav_home")%></a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span><%= i18n.__("nav_recruitment")%></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <main class="main-content" role="main">
+                    <section id="blog-main-content" class="mg-bottom0">
+                        <div class="wrapper">
+
+                            <div class="inner">
+                                <h1 class="seo-h1">
+                                    <%= i18n.__("nav_recruitment")%>
+                                </h1>
+                                <div class="grid">
+                                    <div class="grid__item large--twelfths-twelfths">
+                                        <div class="list-articles">
+                                            <div class="grid">
+
+                                                <div class="grid__item large--four-twelfths">
+                                                    <a href="/recruitment/cad" class="mini-article">
+                                                        <div class="mini-article-img">
+                                                            <img src="/img/recruitment.jpg" alt="CAD" />
+                                                        </div>
+                                                        <p class="mini-article-title">
+                                                            <%= i18n.__("cad designer")%>
+                                                        </p>
+                                                        <p>
+                                                            <span class="tag"><%= i18n.__("nav_recruitment")%></span>
+                                                            <span class="createDate"><%= i18n.__("posted in")%>: 04-04-2017 <%= i18n.__("by")%>: <%= i18n.__("title")%></span>
+                                                        </p>
+                                                        <div class="rte">
+                                                            <p class="mini-article-desc">🔎 <%= i18n.__("hengli vn is recruiting")%> <%= i18n.__("cad designer")%></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="grid__item large--four-twelfths">
+                                                    <a href="/recruitment/translator" class="mini-article">
+                                                        <div class="mini-article-img">
+                                                            <img src="/img/recruitment.jpg" alt="Recruiting 04/2018" />
+                                                        </div>
+                                                        <p class="mini-article-title">
+                                                            <%= i18n.__("chinese translator")%>
+                                                        </p>
+                                                        <p>
+                                                            <span class="tag"><%= i18n.__("nav_recruitment")%></span>
+                                                            <span class="createDate"><%= i18n.__("posted in")%>: 04-04-2017 <%= i18n.__("by")%>: <%= i18n.__("title")%></span>
+                                                        </p>
+                                                        <div class="rte">
+                                                            <p class="mini-article-desc">🔎 <%= i18n.__("hengli vn is recruiting")%> <%= i18n.__("manager assistant")%></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="grid__item large--four-twelfths">
+                                                    <a href="/recruitment/manager-assistant" class="mini-article">
+                                                        <div class="mini-article-img">
+                                                            <img src="/img/recruitment.jpg" alt="CAD" />
+                                                        </div>
+                                                        <p class="mini-article-title">
+                                                            <%= i18n.__("manager assistant")%>
+                                                        </p>
+                                                        <p>
+                                                            <span class="tag"><%= i18n.__("nav_recruitment")%></span>
+                                                            <span class="createDate"><%= i18n.__("posted in")%>: 04-04-2017 <%= i18n.__("by")%>: <%= i18n.__("title")%></span>
+                                                        </p>
+                                                        <div class="rte">
+                                                            <p class="mini-article-desc">🔎 <%= i18n.__("hengli vn is recruiting")%> <%= i18n.__("chinese translator")%></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="pagination-custom">
+
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <% include partials/footer %>
+                <% include partials/scripts %>
+    </body>
+
+</html>

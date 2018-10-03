@@ -1,0 +1,135 @@
+<section id="back-to-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</section>
+
+<div id="NavDrawer" class="drawer drawer--left">
+    <div class="drawer__header">
+        <div class="drawer__title h3">Hengli Vietnam</div>
+        <div class="drawer__close js-drawer-close">
+            <button type="button" class="icon-fallback-text">
+                <span class="icon icon-x" aria-hidden="true"></span>
+                <span class="fallback-text">Đóng</span>
+            </button>
+        </div>
+    </div>
+    <div class="mg-bottom-15"></div>
+    <ul class="mobile-nav">
+
+        <li class="mobile-nav__item">
+            <a href="/" class="mobile-nav__link"><%- i18n.__("nav_home") %></a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="/about" class="mobile-nav__link"><%- i18n.__("nav_about") %></a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="/products" class="mobile-nav__link"><%- i18n.__("nav_products") %></a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="/news" class="mobile-nav__link"><%- i18n.__("nav_news") %></a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="/recruitment" class="mobile-nav__link"><%- i18n.__("nav_recruitment") %></a>
+        </li>
+        <li class="mobile-nav__item ">
+            <a href="/contact" class="mobile-nav__link"><%- i18n.__("nav_contact") %></a>
+        </li>
+
+    </ul>
+   
+</div>
+
+<!-- Header -->
+<header id="header">
+    <div class="header-top">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="grid">
+                    <div class="grid__item large--six-twelfths">
+                        <div class="header-actions">
+                            <a href="tel:02513566872">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> 0251-3566872</a>
+                            <a href="mailto:support@henglivn.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> support@henglivn.com</a>
+                        </div>
+                    </div>
+                    <div class="grid__item large--six-twelfths medium-down--hide">
+                        <div class="header-contact text-right">
+                            <a href="/en" class="social-network">
+                                <span>EN</span>
+                            </a>
+                            <a href="/vi" class="social-network">
+                                <span>VN</span>
+                            </a>
+                            <a href="/ch" class="social-network">
+                                <span>CH</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="nav-bar text-center medium-down--hide" role="navigation">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="grid">
+                    <div class="grid__item large--two-twelfths">
+                        <div class="site-logo">
+                            <h1>
+                                <a href="/" class="web-logo">
+                                    <img src="/img/logo.png" alt="">
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="grid__item large--ten-twelfths">
+                        <ul class="site-nav">
+                            <li class="">
+                                <a href="/"><%- i18n.__("nav_home") %></a>
+                            </li>
+                            <li class="">
+                                <a href="/about"><%- i18n.__("nav_about") %></a>
+                            </li>
+                            <li class=" ">
+                                <a href="/products"><%- i18n.__("nav_products") %></a>
+                            </li>
+                            <li class=" ">
+                                <a href="/news"><%- i18n.__("nav_news") %></a>
+                            </li>
+                            <li class=" ">
+                                <a href="/recruitment"><%- i18n.__("nav_recruitment") %></a>
+                            </li>
+                            
+                            <li class=" ">
+                                <a href="/contact"><%- i18n.__("nav_contact") %></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <nav id="mobile-navbar" class="large--hide" role="navigation">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="grid">
+                    <div class="grid__item medium--one-whole small--one-whole">
+                        <div class="mobile-logo">
+                            <a href="/" class="mobile-logo">
+                                <img src="/img/logo.png" alt="Hengli VN" />
+                            </a>
+                            <button type="button" class="mobile-bars icon-fallback-text site-nav__link js-drawer-open-left" aria-controls="NavDrawer"
+                                aria-expanded="false">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Header Ends -->

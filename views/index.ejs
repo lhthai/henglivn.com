@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<% include partials/head %>
+
+<body id="suplo-company" class="template-index">
+    <% include partials/header %>
+    <div id="PageContainer" class="is-moved-by-drawer">
+
+        <!-- Section Main Slide -->
+        <section id="main-slider">
+            <div id="owl-main-slider" class="owl-carousel owl-enable owl-theme" data-nav="true" data-items="1"
+                data-slide="1">
+
+                <div class="item">
+                    <div class="slide-bg">
+                        <img src="/img/slide-3.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide-bg">
+                        <img src="/img/slide-2.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide-bg">
+                        <img src="/img/slide-1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+            <!-- Section About Us -->
+            <section id="home-about-us">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="grid">
+                            <div class="grid__item large--six-twelfths">
+                                <div class="about-us-desc wow animated fadeInLeft">
+                                    <h2 class="big-title">
+                                        <span>
+                                            <%- i18n.__("about_henglivn") %>
+                                        </span>
+                                    </h2>
+                                    <p>
+                                        <%- i18n.__("home_aboutus_content") %>
+                                    </p>
+                                    <a href="/about" target="_blank">
+                                        <span>
+                                            <%- i18n.__("btn_readmore") %>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__item large--six-twelfths">
+                                <iframe src="https://www.youtube.com/embed/ucUSBgSsV_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <!-- <img src="/img/03.JPG" alt="" /> -->
+                                <!-- <div class="videocontent">
+                                            <div class="videocontent">
+                                                <video poster='/img/03a.jpg' id="video" class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered" preload="auto"
+                                                    controls width="640" height="480" data-setup='{"fluid":true}'>
+                                                    <source src="/img/videos/introduction-video.mp4" type="video/mp4" label="Hengli VN"/>
+                                                </video>
+                                            </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <!-- \\ About Us -->
+    <!-- Section Statistics -->
+    <section id="home-statistics">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="grid">
+                    <div class="grid__item large--two-tenths">
+                        <div class="numStaff">
+                            <p class="counter" data-count="150">
+                                0
+                            </p>
+                            <p>
+                                <%- i18n.__("staffs") %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid__item large--two-tenths">
+                        <div class="numSupport">
+                            <p>
+                                <span class="counter" data-count="24">0</span>
+                                /
+                                <span class="counter" data-count="7">0</span>
+                            </p>
+                            <p>
+                                <%- i18n.__("support") %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid__item large--two-tenths">
+                        <div class="numClient">
+                            <p>
+                                <span class="counter" data-count="1000">0</span>+
+                            </p>
+                            <p>
+                                <%- i18n.__("customer") %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid__item large--two-tenths">
+                        <div class="numPartner">
+                            <p class="counter" data-count="150">
+                                0
+                            </p>
+                            <p>
+                                <%- i18n.__("partner") %>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid__item large--two-tenths">
+                        <div class="numPrize">
+                            <p>
+                                <span class="counter" data-count="50">0</span>+
+                            </p>
+                            <p>
+                                <%- i18n.__("rewards") %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- \\ Statistics -->
+
+    <!-- Section Products -->
+    <section id="home-featured-products">
+        <div class="wrapper">
+            <div class="inner">
+                <h2 class="our-services text-center">
+                    <span>
+                        <%- i18n.__("home_ourproducts") %>
+                    </span>
+                </h2>
+                <div class="grid list-products">
+
+                    <div class="owl-carousel owl-enable suplo-owl" data-nav="true" data-items="4" data-desktop="[1240, 4]"
+                        data-mobile="[640, 2]">
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/cb" class="img-resize">
+                                        <img src="/img/product/cb.jpg" alt="CB">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/cb" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                CB
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/cnfj" class="img-resize">
+                                        <img src="/img/product/cnfj.jpg" alt="CNFJ">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/cnfj" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                CNFJ
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/evf" class="img-resize">
+                                        <img src="/img/product/evf.jpg" alt="EVF">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/evf" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                EVF
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/mf" class="img-resize">
+                                        <img src="/img/product/mf.jpg" alt="MF">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/mf" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                MF
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/fa" class="img-resize">
+                                        <img src="/img/product/fa.jpg" alt="FA">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/fa" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                FA
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/gel" class="img-resize">
+                                        <img src="/img/product/gel.jpg" alt="GEL">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/gel" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                GEL
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/gfm" class="img-resize">
+                                        <img src="/img/product/gfm.jpg" alt="GFM">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/gfm" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                GFM
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__item wow animated fadeInUp">
+                            <div class="product--loop">
+                                <div class="inner">
+                                    <a href="/products/hr" class="img-resize">
+                                        <img src="/img/product/hr.jpg" alt="HR">
+                                    </a>
+                                    <div class="product--loop__info">
+                                        <a href="/products/hr" class="product-name">
+                                            <h2 class="product--loop__title">
+                                                HR
+                                            </h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-action text-center">
+                        <a href="/products" class="btnViewmore">
+                            <span>
+                                <%- i18n.__("btn_seeallproducts") %>
+                            </span>
+                            <span>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- \\ Products -->
+
+    <!-- Section Articles -->
+    <section id="home-articles">
+        <div class="wrapper">
+            <div class="inner">
+                <h2 class="our-articles">
+                    <span>
+                        <%- i18n.__("home_news") %>
+                    </span>
+                </h2>
+                <div class="home-articles-wrapper grid">
+                    <div id="owl-home-articles-slider" class="owl-carousel owl-enable owl-theme" data-nav="true"
+                        data-items="3" data-desktop="[1240, 2]" data-mobile="[640, 1]">
+
+                        <div class="item grid__item">
+                            <a href="/news/product-quality-symposium" class="article wow animated fadeInDown">
+                                <div class="article-img">
+                                    <img src="/img/news2.jpg" alt="Product Quality Symposium" />
+                                </div>
+                                <h3 class="article-title">
+                                    <%- i18n.__("Product Quality Symposium") %>
+                                </h3>
+                                <div class="rte">
+
+                                    <p class="article-desc">
+                                        <%- i18n.__("product_quality_symposium_intro") %>
+                                    </p>
+
+                                </div>
+                                <p class="viewmore" href="/news/product-quality-symposium">
+                                    <%- i18n.__("btn_readmore") %>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="item grid__item">
+                            <a href="/news/our-company-is-in-the-new-modernization-factory" class="article wow animated fadeInDown">
+                                <div class="article-img">
+                                    <img src="/img/news1.jpg" alt="Our company is in the new modernization factory" />
+                                </div>
+                                <h3 class="article-title">
+                                    <%- i18n.__("Our company is in the new modernization factory") %>
+                                </h3>
+                                <div class="rte">
+
+                                    <p class="article-desc">
+                                        <%- i18n.__("our_company_is_intro") %>
+                                    </p>
+
+                                </div>
+                                <p class="viewmore" href="/news/our-company-is-in-the-new-modernization-factory">
+                                    <%- i18n.__("btn_readmore") %>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="item grid__item">
+                            <a href="/news/our-new-factory-in-vn-is-in-production" class="article wow animated fadeInDown">
+                                <div class="article-img">
+                                    <img src="/img/03a.jpg" alt="Our new factory in Vietnam is in production" />
+                                </div>
+                                <h3 class="article-title">
+                                    <%- i18n.__("Our new factory in Vietnam is in production") %>
+                                </h3>
+                                <div class="rte">
+
+                                    <p class="article-desc">
+                                        <%- i18n.__("our_new_factory_intro") %>
+                                    </p>
+
+                                </div>
+                                <p class="viewmore" href="/news/our-new-factory-in-vn-is-in-production">
+                                    <%- i18n.__("btn_readmore") %>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- \\ Articles -->
+
+    <!-- Section Partners -->
+    <section id="home-partners">
+        <div class="wrapper">
+            <div class="inner">
+                <h2 class="our-partners">
+                    <span>
+                        <%- i18n.__("home_ourpartners") %>
+                    </span>
+                </h2>
+                <div class="home-clients-wrapper">
+                    <div id="owl-home-partners" class="owl-carousel owl-enable owl-theme" data-nav="true" data-items="6"
+                        data-desktop="[1240, 6]" data-tablet="[768, 4]" data-mobile="[640, 3]">
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.abchina.com/cn/" target="_blank">
+                                <img src="/img/partner/cab.jpg" alt="China Agricultural Bank" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.ccb.com/cn/home/indexv3.html" target="_blank">
+                                <img src="/img/partner/ccb.jpg" alt="China Construction Bank" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.boc.cn/" target="_blank">
+                                <img src="/img/partner/chinabank.jpg" alt="China Bank" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.chinamobileltd.com" target="_blank">
+                                <img src="/img/partner/chinamobile.jpg" alt="China Mobile" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="https://web.archive.org/web/20061130100825/http://www.cnc.cn:80/index.asp" target="_blank">
+                                <img src="/img/partner/chinanetcom.jpg" alt="China Netcom" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.chinatelecom-h.com" target="_blank">
+                                <img src="/img/partner/chinatelecom.jpg" alt="China Telecom" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.chinaunicom.com.cn/" target="_blank">
+                                <img src="/img/partner/chinaunicom.jpg" alt="China Unicom" />
+                            </a>
+                        </div>
+
+                        <div class="item wow animated fadeInDown">
+                            <a href="http://www.icbc.com.cn/icbc/" target="_blank">
+                                <img src="/img/partner/icbc.jpg" alt="Industrial and Commercial Bank of China" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- \\ Partners -->
+
+    </main>
+    </div>
+    <% include partials/footer %>
+    <% include partials/scripts %>
+</body>
+
+</html>

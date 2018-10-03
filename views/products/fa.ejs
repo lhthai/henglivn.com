@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+            <div id="PageContainer" class="is-moved-by-drawer">
+                <section id="breadcrumb">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="breadcrumb-content">
+                                <p class="breadcrumb-title">FA</p>
+                                <a href="/" title="Back to Home">Home</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="/products" title="">Products</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>FA</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <main class="main-content" role="main">
+                    <div class="wrapper">
+                        <div class="grid grid-rev">
+                            <div class="grid__item product-single large--three-quarters">
+                                <div class="grid">
+                                    <div class="grid__item large--one-half text-center">
+                                        <div class="product-single__photos" id="ProductPhoto">
+
+                                            <img src="/img/product/fa.jpg" alt="" id="ProductPhotoImg">
+                                        </div>
+                                        <ul class="product-single__thumbnails grid-uniform owl-carousel owl-enable suplo-owl" id="ProductThumbs" data-items="4" data-desktop="[1240, 4]"
+                                            data-mobile="[640, 3]">
+
+                                            <li class="grid__item">
+                                                <a href="/img/product/fa.jpg" class="product-single__thumbnail">
+                                                    <img src="/img/product/fa.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="grid__item large--one-half">
+                                        <h1 itemprop="name">FA Series (Front Terminal)</h1>
+                                        <span class="product-sku">
+                                            Features:
+                                            <ul>
+                                                <li>
+                                                    Capacity Range: 55Ah-175Ah
+                                                </li>
+                                                <li>
+                                                    Voltage range: 12V
+                                                </li>
+                                                <li>
+                                                    Self-discharge: ≤1.5% / month
+                                                </li>
+                                                <li>
+                                                    Excellent high rate discharge performance
+                                                </li>
+                                                <li>
+                                                    Long life Design (25 ℃): 12 years
+                                                </li>
+                                                <li>
+                                                    Efficiency of recombination: ≥98%
+                                                </li>
+                                                <li>
+                                                    Operating temperature range: -15 ℃ ~ 50 ℃
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                    <div class="grid__item large--one-twelfths">
+                                        <h1>Product Details</h1>
+                                        <hr>
+                                        <h1>Application</h1>
+                                        <ul>
+                                            <li>Suitable for 19-inch, 23-inch standard power equipment cabinet</li>
+                                            <li>Access network and communication system</li>
+                                            <li>Private local area network or a power supply system</li>
+                                            <li>UPS / EPS and other standby power system</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+                </div>
+                <% include ../partials/footer %>
+
+                    <% include ../partials/scripts %>
+
+    </body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/head %>
+
+    <body>
+        <% include partials/header %>
+            <section id="breadcrumb">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="breadcrumb-content">
+                            <p class="breadcrumb-title"><%= i18n.__("nav_contact")%></p>
+                            <a href="/" title="Quay trở về trang chủ"><%= i18n.__("nav_home")%></a>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span><%= i18n.__("nav_contact")%></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main class="main-content" role="main">
+                <section id="contactUs-map">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCztWxLJuKfo0VH0qC4T8mEdW_A42u0zH4'></script>
+                            <div style='overflow:hidden;height:440px;width:100%;'>
+                                <div id='gmap_canvas' style='height:440px;width:100%;'></div>
+                                <div>
+                                    <small>
+                                        <a href="http://embedgooglemaps.com">embed google maps</a>
+                                    </small>
+                                </div>
+                                <div>
+                                    <small>
+                                        <a href="https://enablecookies.info">are cookies enabled? Browser test</a>
+                                    </small>
+                                </div>
+                                <style>
+                                    #gmap_canvas img {
+                                        max-width: none!important;
+                                        background: none!important
+                                    }
+                                </style>
+                            </div>
+                            <script type='text/javascript'>
+                                function init_map() {
+                                    var myOptions = {
+                                        zoom: 15,
+                                        center: new google.maps.LatLng(10.717609, 106.946915),
+                                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                                    };
+                                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                                    marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(10.717609, 106.946915) });
+                                    infowindow = new google.maps.InfoWindow({ content: '<strong>Heng Li Vietnam</strong><br><%= i18n.__("company_address")%><br>' });
+                                    google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); });
+                                    infowindow.open(map, marker);
+                                } google.maps.event.addDomListener(window, 'load', init_map);
+                            </script>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contactUs-content">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="grid">
+                                <div class="grid__item large--six-twelfths">
+                                    <div class="contactUs-desc">
+                                        <p class="title">
+                                            <%= i18n.__("company_name")%>
+                                        </p>
+                                        <p>
+                                            <%= i18n.__("company_address")%>
+                                        </p>
+                                        <p>
+                                            <%= i18n.__("phone")%> :
+                                            <a href="tel:02513566872">0251-3566872</a>
+                                        </p>
+                                        <p>
+                                            Email :
+                                            <a href="mailto:support@henglivn.com">support@henglivn.com</a>
+                                        </p>
+                                        <p>
+                                            Website:
+                                            <a href="http://www.henglivn.com" target="_blank">http://www.henglivn.com</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="grid__item large--six-twelfths">
+                                    <h1>
+                                        <%= i18n.__("nav_contact")%>
+                                    </h1>
+                                    <div class="form-vertical contact-us-form">
+                                        <form accept-charset='UTF-8' action='/contact' class='contact-form' method='post'>
+                                            <input name='form_type' type='hidden' value='contact'>
+                                            <input name='utf8' type='hidden' value='✓'>
+
+                                            <label for="ContactFormName" class="hidden-label">Your name</label>
+                                            <input type="text" id="ContactFormName" class="input-full" name="contact[name]" placeholder="<%= i18n.__("your name")%>" autocapitalize="words"
+                                                value="">
+
+                                            <label for="ContactFormEmail" class="hidden-label">Email</label>
+                                            <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="<%= i18n.__("email")%>" autocorrect="off"
+                                                autocapitalize="off" value="">
+
+
+                                            <label for="ContactFormPhone" class="hidden-label">Phone number</label>
+                                            <input type="tel" id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="<%= i18n.__("phone")%>" pattern="[0-9\-]*"
+                                                value="">
+
+                                            <label for="ContactFormMessage" class="hidden-label">Content</label>
+                                            <textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="<%= i18n.__("content")%>"></textarea>
+
+                                            <button type="submit" class="btn right"><%= i18n.__("send")%></button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <% include partials/footer %>
+                <% include partials/scripts %>
+
+    </body>
+
+</html>

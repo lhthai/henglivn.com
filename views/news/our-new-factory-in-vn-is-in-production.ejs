@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+    <body>
+        <% include ../partials/header %>
+            <div id="PageContainer" class="is-moved-by-drawer">
+
+                <section id="breadcrumb">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="breadcrumb-content">
+                                <p class="breadcrumb-title"><%=i18n.__("Our new factory in Vietnam is in production")%></p>
+                                <a href="/" title="Home"><%=i18n.__("nav_home")%></a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="/news" title=""><%=i18n.__("nav_news")%></a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span><%=i18n.__("Our new factory in Vietnam is in production")%></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <main class="main-content" role="main">
+                    <section id="blog-main-content" style="margin-bottom: 0px;">
+                        <div class="wrapper">
+                            <div class="inner">
+                                <div class="grid">
+                                    <div class="grid__item large--eight-twelfths">
+                                        <div class="article-content">
+                                            <div class="article-content-img">
+                                                <img src="/img/04.jpg" alt="Our new factory in Vietnam is in production" />
+                                            </div>
+                                            <p>
+                                                <span class="tag"><%=i18n.__("nav_news")%></span>
+                                                <span class="createDate"><%=i18n.__("posted in")%>: 04-04-2017 <%=i18n.__("by")%>: <%= i18n.__("title")%></span>
+                                            </p>
+                                            <h2>
+                                                <%=i18n.__("Our new factory in Vietnam is in production")%>
+                                            </h2>
+                                            <div class="rte" itemprop="articleBody">
+                                                <p><%=i18n.__("our_new_factory_p")%></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <% include ../partials/footer %>
+                <% include ../partials/scripts %>
+    </body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+            <div id="PageContainer" class="is-moved-by-drawer">
+                <section id="breadcrumb">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="breadcrumb-content">
+                                <p class="breadcrumb-title">MF</p>
+                                <a href="/" title="Back to Home">Home</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <a href="/products" title="">Products</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>MF</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <main class="main-content" role="main">
+                    <div class="wrapper">
+                        <div class="grid grid-rev">
+                            <div class="grid__item product-single large--three-quarters">
+                                <div class="grid">
+                                    <div class="grid__item large--one-half text-center">
+                                        <div class="product-single__photos" id="ProductPhoto">
+
+                                            <img src="/img/product/mf.jpg" alt="" id="ProductPhotoImg">
+                                        </div>
+                                        <ul class="product-single__thumbnails grid-uniform owl-carousel owl-enable suplo-owl" id="ProductThumbs" data-items="4" data-desktop="[1240, 4]"
+                                            data-mobile="[640, 3]">
+
+                                            <li class="grid__item">
+                                                <a href="/img/product/mf.jpg" class="product-single__thumbnail">
+                                                    <img src="/img/product/mf.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="grid__item large--one-half">
+                                        <h1 itemprop="name">MF Series (motorcycle battery)</h1>
+                                        <span class="product-sku">
+                                            Features:
+                                            <ul>
+                                                <li>
+                                                    Nominal voltage: 12V
+                                                </li>
+                                                <li>
+                                                    Capacity: 6AH
+                                                </li>
+                                                <li>
+                                                    High Performance Dry Charge
+                                                </li>
+                                                <li>
+                                                    Reliable and stable
+                                                </li>
+                                                <li>
+                                                    Low self-discharge
+                                                </li>
+                                                <li>
+                                                    High restorability
+                                                </li>
+                                                <li>
+                                                    Long lasting
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+
+                                    <div class="grid__item large--one-twelfths">
+                                        <h1>Product Details</h1>
+                                        <hr>
+                                        <h1>Application</h1>
+                                        <p>Motorcycle</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+                </div>
+                <% include ../partials/footer %>
+
+                    <% include ../partials/scripts %>
+
+    </body>
+
+</html>

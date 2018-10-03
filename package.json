@@ -1,0 +1,24 @@
+{
+  "name": "webnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.12.0",
+    "i18n": "^0.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

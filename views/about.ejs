@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/head %>
+
+    <body id="ve-chung-toi" class="template-page">
+        <% include partials/header %>
+            <div id="PageContainer" class="is-moved-by-drawer">
+                <!-- Section Breadcumb -->
+                <section id="breadcrumb">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="breadcrumb-content">
+                                <p class="breadcrumb-title">
+                                    <%= i18n.__("nav_about")%>
+                                </p>
+                                <a href="/" title="Quay trở về trang chủ">
+                                    <%= i18n.__("nav_home")%>
+                                </a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>
+                                    <%= i18n.__("nav_about")%>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- \\Breadcumb -->
+
+                <main class="main-content" role="main">
+                    <!-- Section About Us Content -->
+                    <section id="aboutUs-content">
+                        <div class="wrapper">
+                            <div class="inner">
+                                <div class="grid">
+                                    <h1 class="seo-h1">
+                                        <%= i18n.__("nav_about")%>
+                                    </h1>
+                                    <div class="grid__item large--six-twelfths">
+                                        <div class="aboutUs-desc">
+                                            <p class="title">
+                                                <%= i18n.__("company_name")%>
+                                            </p>
+                                            <p>
+                                                    <%= i18n.__("about_p1")%>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid__item large--six-twelfths">
+                                        <div class="aboutUs-img">
+                                            <img src="/img/office.jpg" alt="Ảnh về chúng tôi" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__item large--six-twelfths">
+                                        <div class="aboutUs-img">
+                                            <img src="/img/assembly-workshop.jpg" alt="Ảnh về chúng tôi" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__item large--six-twelfths">
+
+                                        <div class="aboutUs-desc">
+                                            <p>
+                                                    <%= i18n.__("about_p2")%>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__item large--six-twelfths">
+                                        <div class="aboutUs-desc">
+                                            <p class="title">
+                                                Heng Li Vietnam
+                                            </p>
+                                            <p>
+                                                    <%= i18n.__("about_p3")%>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid__item large--six-twelfths">
+                                        <div class="aboutUs-img">
+                                            <img src="/img/standing-workshop.jpg" alt="Ảnh về chúng tôi" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- \\About Us Ends -->
+
+                    <!-- Big Photo -->
+                    <!-- <section id="aboutUs-big-photo">
+                        <img src="/img/aboutus_big_img.png" alt="Ảnh nền về chúng tôi" />
+                    </section> -->
+
+                    <!-- Section Staffs -->
+                    <!-- <section id="aboutUs-staffs">
+                        <div class="wrapper">
+                            <div class="inner">
+                                <p class="title">
+                                    Ours Managers
+                                </p>
+                                <div class="grid">
+
+                                    <div class="grid__item large--three-twelfths">
+                                        <div class="staff-wrapper">
+                                            <div class="staff-img">
+                                                <img src="/img/manager_1.png" alt="Mr. John Doe" />
+                                            </div>
+                                            <p class="staff-name">
+                                                Mr. John Doe
+                                            </p>
+                                            <p class="staff-role">
+                                                Team Leader @Suplo Company
+                                            </p>
+                                            <p class="staff-desc">
+                                                "Chúng tôi làm việc với tiêu chí, giảm tối đa chi phí kinh doanh, tạo ra sản phẩm có chất lượng tốt với giá cả cạnh tranh,
+                                                nhằm thỏa mãn hài lòng khách hàng."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__item large--three-twelfths">
+                                        <div class="staff-wrapper">
+                                            <div class="staff-img">
+                                                <img src="/img/manager_1.png" alt="Mr. John Doe" />
+                                            </div>
+                                            <p class="staff-name">
+                                                Mr. John Doe
+                                            </p>
+                                            <p class="staff-role">
+                                                Developer @Suplo Company
+                                            </p>
+                                            <p class="staff-desc">
+                                                "Chúng tôi làm việc với tiêu chí, giảm tối đa chi phí kinh doanh, tạo ra sản phẩm có chất lượng tốt với giá cả cạnh tranh,
+                                                nhằm thỏa mãn hài lòng khách hàng."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__item large--three-twelfths">
+                                        <div class="staff-wrapper">
+                                            <div class="staff-img">
+                                                <img src="/img/manager_1.png" alt="Mr. John Doe" />
+                                            </div>
+                                            <p class="staff-name">
+                                                Mr. John Doe
+                                            </p>
+                                            <p class="staff-role">
+                                                Developer @Suplo Company
+                                            </p>
+                                            <p class="staff-desc">
+                                                "Chúng tôi làm việc với tiêu chí, giảm tối đa chi phí kinh doanh, tạo ra sản phẩm có chất lượng tốt với giá cả cạnh tranh,
+                                                nhằm thỏa mãn hài lòng khách hàng."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid__item large--three-twelfths">
+                                        <div class="staff-wrapper">
+                                            <div class="staff-img">
+                                                <img src="/img/manager_1.png" alt="Mr. John Doe" />
+                                            </div>
+                                            <p class="staff-name">
+                                                Mr. John Doe
+                                            </p>
+                                            <p class="staff-role">
+                                                Developer @Suplo Company
+                                            </p>
+                                            <p class="staff-desc">
+                                                "Chúng tôi làm việc với tiêu chí, giảm tối đa chi phí kinh doanh, tạo ra sản phẩm có chất lượng tốt với giá cả cạnh tranh,
+                                                nhằm thỏa mãn hài lòng khách hàng."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!-- \\Staffs -->
+
+                </main>
+            </div>
+            <% include partials/footer %>
+                <% include partials/scripts %>
+    </body>
+
+</html>
