@@ -909,8 +909,8 @@ header .header-top .header-actions a i {
 #home-partners #owl-home-partners .item a img {
   width: 100%;
   vertical-align: middle;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  /* filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;

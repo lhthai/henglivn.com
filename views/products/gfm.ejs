@@ -43,11 +43,12 @@
 
                                     </div>
                                     <div class="grid__item large--one-half">
+                                            <h3 itemprop="name">GFM ( 2 V Series )</h3>
                                         <span class="product-sku">
                                             <h1>Application</h1>
                                             <ul>
                                                 <li>
-                                                    Tel - Communications and backup power
+                                                    Telecommunications and backup power
                                                 </li>
                                                 <li>
                                                     Optical fiber and cell site station
@@ -70,12 +71,10 @@
 
                                     <div class="grid__item large--one-twelfths">
                                         <h1>Product Details</h1>
+                                        <hr>
+                                        <h1>Features </h1>
                                         <br>
-                                        <span>GFM (2 V series)</span>
-                                        <br>
-                                        <span>Features </span>
-                                        <br>
-                                        <span>(A) .Long life</span>
+                                        <span>(A) Long life</span>
                                         <p>
                                             High intensity tight assembly process improves battery assembly tightness and prevents loss of active material so as to enhance
                                             battery life. To adjust the density of electrolyte can improve charge acceptance
@@ -84,42 +83,90 @@
                                             life. So the normal float design life GFM series battery can be upgraded up to
                                             at least 15 years (25%)
                                         </p>
-                                        <br>
+                                        
                                         <span>(B) Excellent high rate discharge performance</span>
                                         <p>
                                             High intensity tight assembly process, it can maintain a very low internal resistance and provide high and excellent current
                                             discharges than conventional batteries by 20%.
                                         </p>
-                                        <br>
+                                        
                                         <span>(C) Low self-discharge</span>
                                         <p>
                                             Our high purity raw materials characteristics and low internal resistance design of the battery can be stored at room temperature
                                             for six months without having a recharge process.
                                         </p>
-                                        <br>
+                                        
                                         <span>(D) Friendly Maintenance</span>
                                         <p>
                                             Special oxygen absorption designed to overcome the less electrolyte water loss during the charging process. There is almost
                                             no loss in the water content of the electrolyte, therefore the battery can be
                                             maintained easily without replenishment of electrolyte.
                                         </p>
-                                        <br>
+                                        
                                         <span>(E) Safety </span>
                                         <p>
                                             Special safety valve equipped internally of the battery can effectively isolate external spark and does not cause the battery
                                             internal explosion.
                                         </p>
-                                        <br>
+                                        
                                         <span>(F) Installation is simple</span>
                                         <p>
                                             Battery can be installed vertically and horizontally in small footprint installation, which is flexible and convenient.
                                         </p>
-                                        <br>
+                                        
                                         <span>(G) Environmental Friendly </span>
                                         <p>
                                                 The battery does not emit acid mist, it will not affect environment and corrosion of the site area, and it can be installed directly to the battery in the office or equipment room with ventilation normal. 
                                         </p>
                                         <br>
+                                        <hr>
+                                        <h1>Main product models and parameters</h1>
+                                        <div class="p_table table_scroll">
+                                                <table class="table_box">
+                                                  <thead>
+                                                    <tr>
+                                                      <th rowspan="2">Model</th>
+                                                      <th rowspan="2">
+                                                        NOMINAL <br />
+                                                        VOLTAGE (V)
+                                                      </th>
+                                                      <th rowspan="2">CAPACITY (Ah)</th>
+                                              
+                                                      <th colspan="4">DIMENSION (mm)</th>
+                                                      <th rowspan="2">
+                                                        WEIGHT<br />
+                                                        (KG)
+                                                      </th>
+                                                      <th colspan="2">Terminal</th>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>L</th>
+                                                      <th>W</th>
+                                                      <th>H</th>
+                                                      <th>Total<br />Height</th>
+                                              
+                                                      <th>Model</th>
+                                                      <th>Position</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody class="table01">
+                                                    <% for(var i=0; i < products.length; i++) { %>
+                                                      <tr>
+                                                        <td><%= products[i].name %></td>
+                                                        <td><%= products[i].voltage %></td>
+                                                        <td><%= products[i].capacity %></td>
+                                                        <td><%= products[i].length %></td>
+                                                        <td><%= products[i].width %></td>
+                                                        <td><%= products[i].height %></td>
+                                                        <td><%= products[i].total_height %></td>
+                                                        <td><%= products[i].weight %></td>
+                                                        <td><%= products[i].model %></td>
+                                                        <td><%= products[i].position %></td>
+                                                      </tr>
+                                                   <% } %>
+                                                  </tbody>
+                                                </table>
+                                              </div>
                                     </div>
                                 </div>
                             </div>

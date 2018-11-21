@@ -30,6 +30,9 @@
         <li class="mobile-nav__item">
             <a href="/recruitment" class="mobile-nav__link"><%- i18n.__("nav_recruitment") %></a>
         </li>
+        <li class="mobile-nav__item">
+            <a href="/csr" class="mobile-nav__link"><%- i18n.__("nav_csr") %></a>
+        </li>
         <li class="mobile-nav__item ">
             <a href="/contact" class="mobile-nav__link"><%- i18n.__("nav_contact") %></a>
         </li>
@@ -88,9 +91,26 @@
                             <li class="">
                                 <a href="/"><%- i18n.__("nav_home") %></a>
                             </li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="/about"><%- i18n.__("nav_about") %></a>
-                            </li>
+                            </li> -->
+                            <li class=" dropdown-menu">
+								<a href="/"><%- i18n.__("nav_about") %> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								
+								<ul>
+									
+									<li class="">
+										<a href="/about/introduction"><%- i18n.__("introduction") %> </a>
+										
+									</li>
+									
+									<li class="">
+										<a href="/about/timeline"><%- i18n.__("timeline") %> </a>
+									</li>
+									
+								</ul>
+								
+							</li>
                             <li class=" ">
                                 <a href="/products"><%- i18n.__("nav_products") %></a>
                             </li>
@@ -100,7 +120,9 @@
                             <li class=" ">
                                 <a href="/recruitment"><%- i18n.__("nav_recruitment") %></a>
                             </li>
-                            
+                            <li class=" ">
+                                <a href="/csr"><%- i18n.__("nav_csr") %></a>
+                            </li>
                             <li class=" ">
                                 <a href="/contact"><%- i18n.__("nav_contact") %></a>
 

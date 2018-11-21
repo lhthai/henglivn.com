@@ -23,9 +23,9 @@ router.get("/ch", (req, res, next) => {
 });
 
 // Routes for main components
-router.get("/about", (req, res, next) => {
-  res.render("about", { i18n: res });
-});
+// router.get("/about", (req, res, next) => {
+//   res.render("about", { i18n: res });
+// });
 
 router.get("/services", (req, res, next) => {
   res.render("services", { i18n: res });
@@ -46,6 +46,11 @@ router.get("/contact", (req, res, next) => {
 router.get("/recruitment", (req, res, next) => {
   res.render("recruitment", { i18n: res });
 });
+
+router.get("/csr", (req, res, next) => {
+  res.render("csr", { i18n: res });
+});
+
 
 // Adding sitemap for google crawler
 router.get("/sitemap", (req, res, next) => {

@@ -11,6 +11,8 @@ const routes = require("./libs/routes/routes.js");
 const products_routes = require("./libs/routes/products.js");
 const news_routes = require("./libs/routes/news.js");
 const recruitment_routes = require("./libs/routes/recruitment.js");
+const csr_routes=require('./libs/routes/csr')
+const about_routes=require('./libs/routes/about')
 const compression = require("compression");
 const helmet = require("helmet");
 
@@ -50,6 +52,8 @@ app.use("/", routes);
 app.use("/products", products_routes);
 app.use("/news", news_routes);
 app.use("/recruitment", recruitment_routes);
+app.use("/csr", csr_routes);
+app.use('/about', about_routes)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,128 +1,135 @@
-<script src='/js/fastclick.min.js?v=1573' type='text/javascript'></script>
-<script src='/js/owl.carousel.js' type='text/javascript'></script>
-<script src='/js/script.js?v=1573' type='text/javascript'></script>
-<script src='/js/timber.js?v=1573' type='text/javascript'></script>
-<!-- <script src='/js/handlebars.min.js?v=1573' type='text/javascript'></script> -->
 
+<script src="/js/fastclick.min.js?v=1573" type="text/javascript"></script>
+<script src="/js/owl.carousel.js" type="text/javascript"></script>
+<script src="/js/script.js?v=1573" type="text/javascript"></script>
+<script src="/js/timber.js?v=1573" type="text/javascript"></script>
+<script src="/js/frst-scale-effect.min.js" type="text/javascript"></script>
+<script src="/js/frst-timeline.js" type="text/javascript"></script>
 
 <script>
-	jQuery(document).ready(function () {
-		wow = new WOW(
-			{
-				boxClass: 'wow',      // default
-				animateClass: 'animated', // default
-				offset: 0,          // default
-				mobile: true,       // default
-				live: true        // default
-			}
-		)
-		wow.init();
-	});
+  jQuery(document).ready(function() {
+    wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: true, // default
+      live: true // default
+    });
+    wow.init();
+  });
 </script>
 
 <script>
-	window.onscroll = changePos;
+  window.onscroll = changePos;
 
-	function changePos() {
-		var header = $("#header");
-		var headerheight = $("#header").height();
-		if (window.pageYOffset > headerheight) {
-			header.addClass('sticky-header');
-		} else {
-			header.removeClass('sticky-header');
-		}
-	}
+  function changePos() {
+    var header = $("#header");
+    var headerheight = $("#header").height();
+    if (window.pageYOffset > headerheight) {
+      header.addClass("sticky-header");
+    } else {
+      header.removeClass("sticky-header");
+    }
+  }
 </script>
 <script>
-	jQuery(document).ready(function () {
-		var offset = 220;
-		var duration = 500;
-		jQuery(window).scroll(function () {
-			if (jQuery(this).scrollTop() > offset) {
-				jQuery('#back-to-top').fadeIn(duration);
-			} else {
-				jQuery('#back-to-top').fadeOut(duration);
-			}
-		});
+  jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery("#back-to-top").fadeIn(duration);
+      } else {
+        jQuery("#back-to-top").fadeOut(duration);
+      }
+    });
 
-		jQuery('#back-to-top').click(function (event) {
-			event.preventDefault();
-			jQuery('html, body').animate({
-				scrollTop: 0
-			}, duration);
-			return false;
-		})
-	});
+    jQuery("#back-to-top").click(function(event) {
+      event.preventDefault();
+      jQuery("html, body").animate(
+        {
+          scrollTop: 0
+        },
+        duration
+      );
+      return false;
+    });
+  });
 </script>
 
-
-
 <script>
-	function Utils() { }
-	Utils.prototype = {
-		constructor: Utils,
-		isElementInView: function (element, fullyInView, pageTop) {
-			var pageBottom = pageTop + $(window).height();
-			var elementTop = $(element).offset().top;
-			var elementBottom = elementTop + $(element).height();
+  function Utils() {}
+  Utils.prototype = {
+    constructor: Utils,
+    isElementInView: function(element, fullyInView, pageTop) {
+      var pageBottom = pageTop + $(window).height();
+      var elementTop = $(element).offset().top;
+      var elementBottom = elementTop + $(element).height();
 
-			if (fullyInView === true) {
-				return ((pageTop < elementTop) && (pageBottom > elementBottom));
-			} else {
-				return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-			}
-		}
-	};
-	var Utils = new Utils();
-	var isElementInView = Utils.isElementInView($('#home-statistics'), false, 0);
-	var counter = true;
-	$(window).scroll(function () {
-		if (Utils.isElementInView($('#home-statistics'), false, $(window).scrollTop())) {
-			if (counter) {
-				$('.counter').each(function () {
-					var $this = $(this),
-						countTo = $this.attr('data-count');
-					$({
-						countNum: $this.text()
-					}).animate({
-						countNum: countTo
-					}, {
-							duration: 3000,
-							easing: 'linear',
-							step: function () {
-								$this.text(Math.floor(this.countNum));
-							},
-							complete: function () {
-								$this.text(this.countNum);
-							}
-						});
-				});
-				counter = false;
-			}
-		} else { }
-	});
+      if (fullyInView === true) {
+        return pageTop < elementTop && pageBottom > elementBottom;
+      } else {
+        return elementTop <= pageBottom && elementBottom >= pageTop;
+      }
+    }
+  };
+  var Utils = new Utils();
+  var isElementInView = Utils.isElementInView($("#home-statistics"), false, 0);
+  var counter = true;
+  $(window).scroll(function() {
+    if (
+      Utils.isElementInView($("#home-statistics"), false, $(window).scrollTop())
+    ) {
+      if (counter) {
+        $(".counter").each(function() {
+          var $this = $(this),
+            countTo = $this.attr("data-count");
+          $({
+            countNum: $this.text()
+          }).animate(
+            {
+              countNum: countTo
+            },
+            {
+              duration: 3000,
+              easing: "linear",
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+              }
+            }
+          );
+        });
+        counter = false;
+      }
+    } else {
+    }
+  });
 </script>
 
-
 <script>
-	$(window).on('load', function () {
-		var img_height_max = 0;
-		$('.img-resize').each(function () {
-			var img_h = $(this).find('img').height();
-			if (img_height_max < img_h) {
-				img_height_max = img_h;
-			}
-		})
-		$('.img-resize').height(img_height_max);
-	})
+  $(window).on("load", function() {
+    var img_height_max = 0;
+    $(".img-resize").each(function() {
+      var img_h = $(this)
+        .find("img")
+        .height();
+      if (img_height_max < img_h) {
+        img_height_max = img_h;
+      }
+    });
+    $(".img-resize").height(img_height_max);
+  });
 
-	$(window).on('load', function () {
-		var img_height_max = 0;
-		$('.img-resize-2').each(function () {
-			if (img_height_max < $(this).height()) {
-				img_height_max = $(this).height();
-			}
-		})
-		$('.img-resize-2').height(img_height_max);
-	})
+  $(window).on("load", function() {
+    var img_height_max = 0;
+    $(".img-resize-2").each(function() {
+      if (img_height_max < $(this).height()) {
+        img_height_max = $(this).height();
+      }
+    });
+    $(".img-resize-2").height(img_height_max);
+  });
 </script>

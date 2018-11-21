@@ -43,9 +43,9 @@
 
                                     </div>
                                     <div class="grid__item large--one-half">
-                                        <h1 itemprop="name">CNFJ Series ( 0.8AH – 250AH) </h1>
+                                        <h3 itemprop="name">CNFJ Series (Energy Storage AGM Gel Battery) </h3>
                                         <span class="product-sku">
-                                            Features:
+                                            <h1>Features:</h1>
                                             <ul>
                                                 <li>
                                                     Capacity Range (C120): 200Ah-3000Ah (25 ℃)
@@ -72,11 +72,59 @@
                                         </span>
                                     </div>
                                     <div class="grid__item large--one-twelfths">
-                                        <h1>Product Details</h1>
-                                        <hr>
                                         <h1>Scope</h1>
-                                        <p>Solar photovoltaic energy storage system </p>
-                                        <p>Energy storage system of wind power </p>
+                                        <ul>
+                                            <li>Solar photovoltaic energy storage system</li>
+                                            <li>Energy storage system of wind power</li>
+                                        </ul>
+                                        <hr>
+                                        <h1>Main product models and parameters</h1>
+                                        <div class="p_table table_scroll">
+                                            <table class="table_box">
+                                              <thead>
+                                                <tr>
+                                                  <th rowspan="2">Model</th>
+                                                  <th rowspan="2">
+                                                    NOMINAL <br />
+                                                    VOLTAGE (V)
+                                                  </th>
+                                                  <th rowspan="2">CAPACITY (Ah)</th>
+                                          
+                                                  <th colspan="4">DIMENSION (mm)</th>
+                                                  <th rowspan="2">
+                                                    WEIGHT<br />
+                                                    (KG)
+                                                  </th>
+                                                  <th colspan="2">Terminal</th>
+                                                </tr>
+                                                <tr>
+                                                  <th>L</th>
+                                                  <th>W</th>
+                                                  <th>H</th>
+                                                  <th>Total<br />Height</th>
+                                          
+                                                  <th>Model</th>
+                                                  <th>Position</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody class="table01">
+                                                <% for(var i=0; i < products.length; i++) { %>
+                                                  <tr>
+                                                    <td><%= products[i].name %></td>
+                                                    <td><%= products[i].voltage %></td>
+                                                    <td><%= products[i].capacity %></td>
+                                                    <td><%= products[i].length %></td>
+                                                    <td><%= products[i].width %></td>
+                                                    <td><%= products[i].height %></td>
+                                                    <td><%= products[i].total_height %></td>
+                                                    <td><%= products[i].weight %></td>
+                                                    <td><%= products[i].model %></td>
+                                                    <td><%= products[i].position %></td>
+                                                  </tr>
+                                               <% } %>
+                                              </tbody>
+                                            </table>
+                                          </div>
                                     </div>
                                 </div>
                             </div>

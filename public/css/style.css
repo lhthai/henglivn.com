@@ -1,0 +1,77 @@
+/*product_table*/
+
+.table_secion .table_scroll:last-child {
+    margin: 0;
+}
+
+.table_scroll {
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+.p_table table,
+.p_table td,
+.p_table th {
+    text-align: center;
+}
+
+.p_table td,
+.p_table th {
+    padding: 20px 5px;
+}
+
+.p_table table {
+    width: 100%;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.p_table thead {
+    background-color: #006953;
+    min-width: 100%;
+}
+
+.p_table tr th {
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+}
+
+.p_table tbody tr {
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.p_table tr .fixed_th {
+    background-color: #e6e6e6;
+    color: #292929;
+}
+
+.table_check {
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.check_on {
+    color: #e46713;
+}
+
+.detail_box {
+    margin: 0 auto;
+}
+
+
+/*hover 視窗*/
+
+.table01 td {
+    position: relative;
+    min-width: 55px;
+}
+
+.table01 td.first-name {
+    min-width: 135px;
+}
+
+.information .news2_button {
+    justify-content: flex-start;
+}
