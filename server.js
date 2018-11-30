@@ -11,14 +11,14 @@ const routes = require("./libs/routes/routes.js");
 const products_routes = require("./libs/routes/products.js");
 const news_routes = require("./libs/routes/news.js");
 const recruitment_routes = require("./libs/routes/recruitment.js");
-const csr_routes=require('./libs/routes/csr')
-const about_routes=require('./libs/routes/about')
+const csr_routes = require("./libs/routes/csr");
+const about_routes = require("./libs/routes/about");
 const compression = require("compression");
 const helmet = require("helmet");
 
 //configure i18n
 i18n.configure({
-  locales: ['vi', 'en', 'ch'],
+  locales: ["vi", "en", "ch"],
   directory: __dirname + "/locales",
   cookie: "i18n"
 });
@@ -45,7 +45,8 @@ app.use(helmet());
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use('/public', express.static(path.join(__dirname, "/public")));
+//app.use('/public', express.static(__dirname + "/public"));
 
 // Configure routes
 app.use("/", routes);
@@ -53,7 +54,7 @@ app.use("/products", products_routes);
 app.use("/news", news_routes);
 app.use("/recruitment", recruitment_routes);
 app.use("/csr", csr_routes);
-app.use('/about', about_routes)
+app.use("/about", about_routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
