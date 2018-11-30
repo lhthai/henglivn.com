@@ -45,8 +45,7 @@ app.use(helmet());
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-app.use('/public', express.static(path.join(__dirname, "/public")));
-//app.use('/public', express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // Configure routes
 app.use("/", routes);
